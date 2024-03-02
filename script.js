@@ -5,7 +5,7 @@ let user = document.querySelector('#user');
 
 btn.addEventListener('click', function onClick(event) {
 
-    
+    // changing moon into light bulb
     if (image.src.match("icons8-moon-100.png")) {
         image.src = "icons8-light-100.png";
     }
@@ -13,6 +13,7 @@ btn.addEventListener('click', function onClick(event) {
         image.src = "icons8-moon-100.png";
     }
 
+    // changing black into white
     if (user.src.match("black.png")) {
         user.src = "white.png";
     }
