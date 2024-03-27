@@ -38,9 +38,11 @@ header {
    
     .navigation {
         position: absolute;
+        border: 1px solid black;
         top: 8rem;
         margin-bottom: 0;
         margin: auto;
+        width: 350px;
         gap: 1rem;
     }
 
