@@ -6,19 +6,19 @@ let user = document.querySelector('#user');
 btn.addEventListener('click', function onClick(event) {
 
     // changing moon into light bulb
-    if (image.src.match("icons8-moon-100.png")) {
-        image.src = "icons8-light-100.png";
+    if (image.src.match("img/icons8-moon-100.png")) {
+        image.src = "img/icons8-light-100.png";
     }
     else {
-        image.src = "icons8-moon-100.png";
+        image.src = "img/icons8-moon-100.png";
     }
 
     // changing black into white
-    if (user.src.match("black.png")) {
-        user.src = "white.png";
+    if (user.src.match("img/black.png")) {
+        user.src = "img/white.png";
     }
     else {
-        user.src = "black.png";
+        user.src = "img/black.png";
     }
 
     darkMode.classList.toggle('dark-mode'); 

@@ -8,11 +8,6 @@
     scroll-behavior: smooth;
 }
 
-.main-container {
-    width: 80%;
-    margin: auto;
-}
-
 /* About */
 header {
     width: 100%;
@@ -39,6 +34,36 @@ header {
     align-items: center;
 }
 
+@media (max-width: 765px){
+   
+    .navigation {
+        position: absolute;
+        top: 8rem;
+        margin-bottom: 0;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .logo-name {
+        width: 50%;
+    }
+}
+
+@media (min-width: 400px) {
+
+    .navigation {
+        left: 2rem;
+    }
+}
+
+@media (max-width: 992px){
+
+    .navigation {
+        width: 60%;
+    }
+}
+
+
 .navigation a {
     text-decoration: none;
     color: #28282B;
@@ -48,6 +73,13 @@ header {
 .navigation a:hover {
     opacity: 0.8;
     color: #0096FF;
+}
+
+@media (max-width: 470px) {
+    
+    .navigation a {
+        font-weight: normal;
+    }
 }
 
 .mode {
@@ -85,15 +117,36 @@ img {
     display: flex;
 }
 
+@media (max-width: 765px){
+    #about {
+        margin-top: 4rem;
+    }
+
+    .mode {
+        width: 50%;
+    }
+}
+
+@media (min-width: 766px) and (max-width: 992px){
+
+    .mode {
+        width: 20%;
+    }
+}
+
 .about-text {
     width: 60%;
     height: 300px;
     color: #28282B;
 }
 
-.about-text h4 {
-    margin-left: 20px;
+@media (max-width: 765px){
+    .about-text {
+        width: 100%;
+        text-align: center;
+    }
 }
+
 
 h2.student-text {
     font-family: cursive;
@@ -117,6 +170,34 @@ h2.student-text {
     color: #0096FF;
 }
 
+@media (max-width: 765px){
+
+    .name-box {
+        justify-content: center;
+        
+    }
+
+    .name-box h1, .name-box h2 {
+        font-size: 2rem;
+    }
+
+    .about-text h6 {
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 470px) {
+    
+    .name-box h1, .name-box h2 {
+        font-size: 1.5rem;
+    }
+
+    h2.student-text {
+        font-size: 1.1rem;
+    }
+}
+
 .social-links {
     margin: 20px 0px 20px;
     display: flex;
@@ -131,12 +212,28 @@ h2.student-text {
     opacity: 0.8;
 }
 
+@media (max-width: 765px){
+
+    .social-links {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+
 .about-pict {
     width: 40%;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 765px){
+    .about-pict {
+        width: 100%;
+    }
 }
 
 .about-pict img {
@@ -147,7 +244,14 @@ h2.student-text {
 
 /* Projects */
 #projects {
-    margin-top: 500px;
+    margin-top: 100px;
+}
+
+@media (min-width: 1000px) {
+    #slider {
+        width: 75%;
+        margin: auto;
+    }
 }
 
 
@@ -158,7 +262,7 @@ h2.student-text {
     color: white;
 }
 
-.dark-mode .navigation a, .dark-mode .logo-name h2, .dark-mode .about-text h4, .dark-mode .name-box h1 {
+.dark-mode .navigation a, .dark-mode .logo-name h2, .dark-mode .about-text h6, .dark-mode .name-box h1 {
     color: #fff;
 }
 
