@@ -203,11 +203,13 @@ h2.student-text {
         margin: 0;
     }
 
+}
 
+@media (min-width: 300px) and (max-width: 765px){
+    
     h2.student-text {
         font-family: "Maven Pro", sans-serif;
     }
-
 }
 
 @media (min-width: 766px) and (max-width: 992px){
